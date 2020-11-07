@@ -6,28 +6,24 @@ export const events = {
 };
 
 export function throwEventFor(timerStatus, mobInProgress) {
-    return detectFrom(timerStatus, mobInProgress);
-}
-
-function detectFrom(timerStatus, mobInProgress) {
-    if (timerStatus.lengthInMinutes === 0 && mobInProgress === true) {
-        let event = events.TURN_INTERRUPTED;
-        send(event, timerStatus, mobInProgress);
-        return event;
-    }
-    if (timerStatus.timeLeftInMillis === 0 && mobInProgress === true) {
-        let event = events.TURN_ENDED;
-        send(event, timerStatus, mobInProgress);
-        return event;
-    }
-    if (timerStatus.timeLeftInMillis > 0 && mobInProgress === false) {
-        let event = events.TURN_STARTED;
-        send(event, timerStatus, mobInProgress);
-        return event;
-    }
-    let event = events.TIME_PASSED;
+    let event = detectEvent(timerStatus, mobInProgress);
     send(event, timerStatus, mobInProgress);
     return event;
+}
+
+function detectEvent(timerStatus, mobInProgress) {
+    if (mobInProgress === true) {
+        if (timerStatus.lengthInMinutes === 0) {
+            return events.TURN_INTERRUPTED;
+        }
+        if (timerStatus.timeLeftInMillis === 0) {
+            return events.TURN_ENDED;
+        }
+    }
+    if (mobInProgress === false && timerStatus.timeLeftInMillis > 0) {
+        return events.TURN_STARTED;
+    }
+    return events.TIME_PASSED;
 }
 
 function send(event, timerStatus, mobInProgress) {
