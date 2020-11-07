@@ -1,4 +1,4 @@
-var time = require("../../src/front/js/functions/human_readable_time");
+var time = require("../src/functions/human_readable_time");
 var async = require('async');
 var expect = require("chai").expect;
 

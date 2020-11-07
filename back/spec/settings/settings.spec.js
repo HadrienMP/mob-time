@@ -1,4 +1,4 @@
-const {toSettings} = require("../../../src/back/settings/settings");
+const {toSettings} = require("../../src/settings/settings");
 const chai = require("chai");
 const expect = chai.expect;
 

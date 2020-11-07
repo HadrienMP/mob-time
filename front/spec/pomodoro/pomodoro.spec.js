@@ -1,4 +1,4 @@
-let core = require("../../../src/front/js/pomodoro/core");
+let core = require("../../src/pomodoro/core");
 const chai = require("chai");
 const sinon = require("sinon");
 const sinonChai = require("sinon-chai");

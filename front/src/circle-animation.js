@@ -1,4 +1,5 @@
 export function progression(circle, ratio, dash) {
+    if (circle === null) return
     if (ratio === 0) {
         circle.style.strokeDashoffset = "0";
     } else {

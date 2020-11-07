@@ -1,5 +1,5 @@
 const chai = require("chai");
-const {isOn, activate, clean} = require("../../../src/back/features/core");
+const {isOn, activate, clean} = require("../../src/features/core");
 const expect = chai.expect;
 
 describe("Features - core", () => {

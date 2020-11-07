@@ -108,6 +108,8 @@ exports.progression = progression;
 exports.dasharray = dasharray;
 
 function progression(circle, ratio, dash) {
+  if (circle === null) return;
+
   if (ratio === 0) {
     circle.style.strokeDashoffset = "0";
   } else {

@@ -4,11 +4,12 @@
   "description": "",
   "main": "src/back/app.js",
   "scripts": {
-    "bundle": "watchify src/front/js/mob.js -o public/js/bundle.js",
-    "build": "browserify src/front/js/mob.js -o public/js/bundle.js",
-    "start": "node src/back/app.js",
-    "dev": "nodemon src/back/app.js",
-    "test": "mocha -r esm 'spec/**/*.js' --reporter spec",
+    "bundle": "watchify front/src/mob.js -o front/public/js/bundle.js",
+    "build": "browserify front/src/mob.js -o front/public/js/bundle.js",
+    "start": "node back/src/app.js",
+    "dev": "nodemon back/src/app.js",
+    "back-test": "mocha -r esm 'back/spec/**/*.js' --reporter spec",
+    "front-test": "mocha -r esm 'front/spec/**/*.js' --reporter spec",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "gui-test": "start-server-and-test start http://localhost:3000 cy:run"
