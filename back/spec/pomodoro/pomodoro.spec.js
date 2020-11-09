@@ -68,7 +68,7 @@ describe("Pomodoro", () => {
             let now = new Date();
             store.get.withArgs('test-mob-pomodoro').returns(JSON.stringify({
                 formatVersion: 1,
-                start: new Date(now.getTime() - 30 * 60_000),
+                start: new Date(now.getTime() - 30 * 60000),
                 length: 30
             }));
 
@@ -85,7 +85,7 @@ describe("Pomodoro", () => {
             let now = new Date();
             store.get.withArgs('test-mob-pomodoro').returns(JSON.stringify({
                 formatVersion: 1,
-                start: new Date(now.getTime() - 10 * 60_000),
+                start: new Date(now.getTime() - 10 * 60000),
                 length: 30
             }));
 
