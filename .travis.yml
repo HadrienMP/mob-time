@@ -9,7 +9,8 @@ cache:
     - ~/.cache
 
 script:
-  - npm test
+  - npm back-test
+  - npm front-test
   - npm run start &
   - npm run cy:run
   # after all tests finish running we need
