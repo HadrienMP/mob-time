@@ -20,8 +20,6 @@ class Settings {
 }
 
 class PomodoroSettings {
-    turns;
-
     constructor(active, turns) {
         this.active = active
         this.turns = turns;

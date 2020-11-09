@@ -5,8 +5,10 @@ const allSettings = require("../settings/allSettings");
 const features = require("../features/facade");
 
 class FeatureToggle {
-    on = new FeatureOn();
-    off = new FeatureOff();
+    constructor() {
+        this.on = new FeatureOn()
+        this.off = new FeatureOff()
+    }
 
     async status(name) {
         return this.feature(name).status(name);
@@ -17,8 +19,7 @@ class FeatureToggle {
     }
 
     feature(name) {
-        if (features.isOn("pomodoro", name)) return this.on;
-        return this.off;
+        return features.isOn("pomodoro", name) ? this.on : this.off;
     }
 }
 
@@ -37,9 +38,7 @@ class FeatureOn {
 
     async length(name, turn) {
         let settings = await allSettings.get(name);
-        let length = turn.lengthInSeconds * settings.pomodoro.turns / 60;
-
-        return length;
+        return turn.lengthInSeconds * settings.pomodoro.turns / 60;
     }
 
     async stop(name) {

@@ -22,7 +22,7 @@ class Pomodoro {
     }
 
     elapsedMinutes() {
-        return (new Date() - this.start) / 60_000;
+        return (new Date() - this.start) / 60000;
     }
 }
 
