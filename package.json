@@ -33,7 +33,7 @@
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "slugify": "^1.4.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
