@@ -1,4 +1,4 @@
-/* line 3, ../sass/_common.scss */
+/* line 3, ../../sass/_common.scss */
 body {
   text-align: center;
   font-family: Oswald, sans-serif;
@@ -6,11 +6,11 @@ body {
   font-size: 17px;
 }
 
-/* line 10, ../sass/_common.scss */
+/* line 10, ../../sass/_common.scss */
 h1 {
   margin: 0;
 }
-/* line 13, ../sass/_common.scss */
+/* line 13, ../../sass/_common.scss */
 h1 a {
   color: #707070;
   padding: 15px 0 10px;
@@ -24,36 +24,36 @@ h1 a {
   display: block;
 }
 
-/* line 27, ../sass/_common.scss */
+/* line 27, ../../sass/_common.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline: none;
 }
-/* line 31, ../sass/_common.scss */
+/* line 31, ../../sass/_common.scss */
 a:focus {
   outline: none;
 }
 
-/* line 36, ../sass/_common.scss */
+/* line 36, ../../sass/_common.scss */
 fieldset {
   padding: 0;
   border: none;
   margin-top: 15px;
 }
 
-/* line 42, ../sass/_common.scss */
+/* line 42, ../../sass/_common.scss */
 i {
   vertical-align: middle;
 }
 
-/* line 46, ../sass/_common.scss */
+/* line 46, ../../sass/_common.scss */
 #container {
   margin: 20px auto;
   width: 433px;
 }
 
-/* line 51, ../sass/_common.scss */
+/* line 51, ../../sass/_common.scss */
 #github {
   display: block;
   margin: 20px auto;
@@ -63,41 +63,41 @@ i {
   padding: 12px;
   box-sizing: border-box;
 }
-/* line 60, ../sass/_common.scss */
+/* line 60, ../../sass/_common.scss */
 #github i {
   margin-right: 10px;
   font-size: 1.5em;
   margin-top: -4px;
 }
-/* line 66, ../sass/_common.scss */
+/* line 66, ../../sass/_common.scss */
 #github:hover {
   color: white;
   background: #707070;
 }
 
-/* line 72, ../sass/_common.scss */
+/* line 72, ../../sass/_common.scss */
 p a {
   text-decoration: underline;
 }
 
-/* line 5, ../sass/home.scss */
+/* line 5, ../../sass/home.scss */
 #home #title {
   width: auto;
   margin: 10px 0 20px;
 }
-/* line 10, ../sass/home.scss */
+/* line 10, ../../sass/home.scss */
 #home #mob {
   font-size: 1.2em;
   font-weight: normal;
   margin: 10px auto;
 }
-/* line 15, ../sass/home.scss */
+/* line 15, ../../sass/home.scss */
 #home #mob fieldset {
   text-align: left;
   white-space: nowrap;
   margin: 15px 0;
 }
-/* line 20, ../sass/home.scss */
+/* line 20, ../../sass/home.scss */
 #home #mob fieldset * {
   display: inline-block;
   width: 50%;
@@ -105,16 +105,16 @@ p a {
   white-space: normal;
   vertical-align: middle;
 }
-/* line 28, ../sass/home.scss */
+/* line 28, ../../sass/home.scss */
 #home #mob label {
   padding-right: 10px;
 }
-/* line 32, ../sass/home.scss */
+/* line 32, ../../sass/home.scss */
 #home #mob #mob-name, #home #mob #nickname {
   padding: 2px 4px;
   border: 1px solid grey;
 }
-/* line 37, ../sass/home.scss */
+/* line 37, ../../sass/home.scss */
 #home #mob #submit {
   margin: 10px 0;
   width: 100%;
@@ -127,13 +127,13 @@ p a {
   background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 20px, #efefef 20px, #efefef 40px);
   cursor: pointer;
 }
-/* line 49, ../sass/home.scss */
+/* line 49, ../../sass/home.scss */
 #home #mob #submit i {
   margin-right: 10px;
   font-size: .8em;
   margin-top: -4px;
 }
-/* line 55, ../sass/home.scss */
+/* line 55, ../../sass/home.scss */
 #home #mob #submit:hover {
   color: white;
   background: #707070;
